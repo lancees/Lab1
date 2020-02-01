@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/lancesander/CLionProjects/Lab1/Color.h">
+			<Option target="Lab1"/>
+		</Unit>
+		<Unit filename="/Users/lancesander/CLionProjects/Lab1/cmake-build-debug/Color.cpp">
+			<Option target="Lab1"/>
+		</Unit>
 		<Unit filename="/Users/lancesander/CLionProjects/Lab1/main.cpp">
 			<Option target="Lab1"/>
 		</Unit>

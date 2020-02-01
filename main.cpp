@@ -1,18 +1,21 @@
-// Example program
+// Lance E. Sander
+// Programming Fundamentals III - Data Structures
 #include <iostream>
 #include <string>
+#include "Color.h"
 #include <algorithm>    // std::max
 
-int r(int a[], int asize) {
+template <class ElementType>
+ElementType r(ElementType a[], int asize) {
     if (asize == 1) {
         return a[0];
     } else {
         int quotient = asize / 2; // remainder will be done by 2nd loop
-        int lefthalf[quotient]; // first half may be fewer
+        ElementType lefthalf[quotient]; // first half may be fewer
         for (int i =0; i < quotient; i++) { // end loop at quotient
             lefthalf[i] = a[i];
         }
-        int righthalf[asize-quotient]; // second half is equal or +1
+        ElementType righthalf[asize-quotient]; // second half is equal or +1
         for (int i =quotient; i < asize; i++) { // pickup remaining  elements
             righthalf[i-quotient] = a[i];
         }
@@ -22,6 +25,15 @@ int r(int a[], int asize) {
 
 int main()
 {
-    int myarray[7] = {6,7,92, 8, 9, 10, 4};
-    std::cout << "hello" << std::endl << r(myarray, sizeof(myarray)/sizeof(myarray[0])) << std::endl;
+    int myints[7] = {6,7,92, 8, 9, 10, 4};
+    int rval = r(myints, sizeof(myints,sizeof(myints)/sizeof(myints[0])));
+    std::cout << r(myints, sizeof(myints)/sizeof(myints[0])) << std::endl;
+
+    std::string mystrings[6] = {"a", "b", "c", "z", "e", "k"};
+    std::cout << r(mystrings, sizeof(mystrings)/sizeof(mystrings[0])) << std::endl;
+
+    double mydoubles[3] = {1.1, 3.4, 2.6};
+    std::cout << r(mydoubles, sizeof(mydoubles)/sizeof(mydoubles[0])) << std::endl;
+
+    // wanted to compare colors but unsure how to implement MAX custom to my Color
 }

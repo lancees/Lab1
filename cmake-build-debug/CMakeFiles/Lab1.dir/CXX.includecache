@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
+/Users/lancesander/CLionProjects/Lab1/Color.h
+
 /Users/lancesander/CLionProjects/Lab1/main.cpp
 iostream
 -
 string
 -
+Color.h
+/Users/lancesander/CLionProjects/Lab1/Color.h
 algorithm
 -
 

@@ -26,7 +26,6 @@ ElementType r(ElementType a[], int asize) {
 int main()
 {
     int myints[7] = {6,7,92, 8, 9, 10, 4};
-    int rval = r(myints, sizeof(myints,sizeof(myints)/sizeof(myints[0])));
     std::cout << r(myints, sizeof(myints)/sizeof(myints[0])) << std::endl;
 
     std::string mystrings[6] = {"a", "b", "c", "z", "e", "k"};

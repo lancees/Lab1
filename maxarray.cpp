@@ -4,6 +4,12 @@
 #include <string>
 #include "Color.h"
 #include <algorithm>    // std::max
+using namespace std;
+
+Color max(Color a, Color b) {
+
+    return (a.getColorID() < b.getColorID()) ? b : a;
+}
 
 template <class ElementType>
 ElementType maxArray(ElementType a[], int asize) {
@@ -19,7 +25,7 @@ ElementType maxArray(ElementType a[], int asize) {
         for (int i =quotient; i < asize; i++) { // pickup remaining  elements
             righthalf[i-quotient] = a[i];
         }
-        return std::max(maxArray(lefthalf, quotient), maxArray(righthalf, asize-quotient));
+        return max(maxArray(lefthalf, quotient), maxArray(righthalf, asize-quotient));
     }
 }
 
@@ -34,5 +40,6 @@ int main()
     double mydoubles[3] = {1.1, 3.4, 2.6};
     std::cout << maxArray(mydoubles, sizeof(mydoubles)/sizeof(mydoubles[0])) << std::endl;
 
-    // wanted to compare colors but unsure how to implement MAX custom to my Color
+    Color colors[4] = {Color(Color::RED), Color(Color::GREEN), Color(Color::BLUE), Color(Color::ORANGE)};
+    std::cout << "colorName - " << maxArray(colors, sizeof(colors)/sizeof(colors[0])).colorName() << std::endl;
 }

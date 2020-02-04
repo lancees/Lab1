@@ -6,7 +6,6 @@
 #ifndef LAB1_COLOR_H
 #define LAB1_COLOR_H
 
-
 class Color {
 private:
     int colorID;
@@ -18,7 +17,7 @@ public:
     static const int GREEN = 4;
     static const int BLUE = 5;
     static const int VIOLET = 6;
-    int hz[6] = {RED, ORANGE, YELLOW, GREEN, BLUE, VIOLET};
+    int hz[6] = {450, 500, 520, 575, 650, 750};
 
     Color() {}
 
@@ -27,6 +26,11 @@ public:
     }
     int getColorID() {
         return colorID;
+    }
+
+    int hertz() { // hertz is returned in TERAHERTZ
+
+        return hz[getColorID()-1];
     }
 
     std::string colorName() {
@@ -59,7 +63,6 @@ public:
         return colorName;
     }
 
-    int hzOrder () {return colorID;}
 };
 
 

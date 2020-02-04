@@ -8,7 +8,7 @@ using namespace std;
 
 Color max(Color a, Color b) {
 
-    return (a.getColorID() < b.getColorID()) ? b : a;
+    return (a.hertz() < b.hertz()) ? b : a;
 }
 
 template <class ElementType>
@@ -40,6 +40,6 @@ int main()
     double mydoubles[3] = {1.1, 3.4, 2.6};
     std::cout << maxArray(mydoubles, sizeof(mydoubles)/sizeof(mydoubles[0])) << std::endl;
 
-    Color colors[4] = {Color(Color::RED), Color(Color::GREEN), Color(Color::BLUE), Color(Color::ORANGE)};
+    Color colors[5] = {Color(Color::VIOLET), Color(Color::GREEN), Color(Color::BLUE), Color(Color::ORANGE), Color(Color::YELLOW)};
     std::cout << "colorName - " << maxArray(colors, sizeof(colors)/sizeof(colors[0])).colorName() << std::endl;
 }

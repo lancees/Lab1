@@ -4,12 +4,6 @@
 #include <string>
 #include "Color.h"
 #include <algorithm>    // std::max
-using namespace std;
-
-Color max(Color a, Color b) {
-
-    return (a.hertz() < b.hertz()) ? b : a;
-}
 
 template <class ElementType>
 ElementType maxArray(ElementType a[], int asize) {
@@ -25,7 +19,7 @@ ElementType maxArray(ElementType a[], int asize) {
         for (int i =quotient; i < asize; i++) { // pickup remaining  elements
             righthalf[i-quotient] = a[i];
         }
-        return max(maxArray(lefthalf, quotient), maxArray(righthalf, asize-quotient));
+        return std::max(maxArray(lefthalf, quotient), maxArray(righthalf, asize-quotient));
     }
 }
 

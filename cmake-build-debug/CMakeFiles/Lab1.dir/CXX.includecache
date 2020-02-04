@@ -7,8 +7,10 @@
 #IncludeRegexTransform: 
 
 /Users/lancesander/CLionProjects/Lab1/Color.h
+string
+-
 
-/Users/lancesander/CLionProjects/Lab1/main.cpp
+/Users/lancesander/CLionProjects/Lab1/maxarray.cpp
 iostream
 -
 string

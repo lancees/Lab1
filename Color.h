@@ -18,6 +18,7 @@ public:
     static const int BLUE = 5;
     static const int VIOLET = 6;
     int hz[6] = {450, 500, 520, 575, 650, 750};
+    friend bool operator< (Color &c1, Color &c2);
 
     Color() {}
 
@@ -28,8 +29,7 @@ public:
         return colorID;
     }
 
-    int hertz() { // hertz is returned in TERAHERTZ
-
+    int hertz() {
         return hz[getColorID()-1];
     }
 
@@ -62,8 +62,9 @@ public:
         }
         return colorName;
     }
-
 };
-
-
+bool operator< (Color c1, Color c2)
+{
+    return c1.hertz()  <  c2.hertz();
+}
 #endif //LAB1_COLOR_H

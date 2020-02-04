@@ -123,59 +123,32 @@ Lab1/fast:
 	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/build
 .PHONY : Lab1/fast
 
-Color.o: Color.cpp.o
+maxarray.o: maxarray.cpp.o
 
-.PHONY : Color.o
-
-# target to build an object file
-Color.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Color.cpp.o
-.PHONY : Color.cpp.o
-
-Color.i: Color.cpp.i
-
-.PHONY : Color.i
-
-# target to preprocess a source file
-Color.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Color.cpp.i
-.PHONY : Color.cpp.i
-
-Color.s: Color.cpp.s
-
-.PHONY : Color.s
-
-# target to generate assembly for a file
-Color.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/Color.cpp.s
-.PHONY : Color.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : maxarray.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/main.cpp.o
-.PHONY : main.cpp.o
+maxarray.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/maxarray.cpp.o
+.PHONY : maxarray.cpp.o
 
-main.i: main.cpp.i
+maxarray.i: maxarray.cpp.i
 
-.PHONY : main.i
+.PHONY : maxarray.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/main.cpp.i
-.PHONY : main.cpp.i
+maxarray.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/maxarray.cpp.i
+.PHONY : maxarray.cpp.i
 
-main.s: main.cpp.s
+maxarray.s: maxarray.cpp.s
 
-.PHONY : main.s
+.PHONY : maxarray.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/main.cpp.s
-.PHONY : main.cpp.s
+maxarray.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab1.dir/build.make CMakeFiles/Lab1.dir/maxarray.cpp.s
+.PHONY : maxarray.cpp.s
 
 # Help Target
 help:
@@ -186,12 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Lab1"
-	@echo "... Color.o"
-	@echo "... Color.i"
-	@echo "... Color.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... maxarray.o"
+	@echo "... maxarray.i"
+	@echo "... maxarray.s"
 .PHONY : help
 
 

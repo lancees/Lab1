@@ -3,5 +3,5 @@ project(Lab1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab1 main.cpp Color.cpp Color.h)
+add_executable(Lab1 maxarray.cpp Color.h)
 
